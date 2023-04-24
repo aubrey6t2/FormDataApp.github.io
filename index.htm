@@ -40,31 +40,31 @@
               <h2 id="student-info">Customer's Info</h2>
               <div class="info">
                 <label for="student-name">Name:</label>
-                <input type="text" name="student-name" id="student-name" required/>
+                <input type="text" name="student-name" id="student-name" placeholder="Enter Full Name" required/>
               </div>
               <div class="info">
                 <label for="student-address">Address:</label>
-                <input type="text" name="student-address" id="student-address" required/>
+                <input type="text" name="student-address" id="student-address" placeholder="Enter Address" required/>
               </div>
               <div class="info">
                 <label for="student-phone">Phone:</label>
-                <input type="number" name="student-phone" id="student-phone" required/>
+                <input type="number" name="student-phone" id="student-phone" placeholder="Enter Phone" required/>
               </div>
               <div class="info">
                 <label for="student-email">Email:</label>
-                <input type="email" name="student-email" id="student-email" required/>
+                <input type="email" name="student-email" id="student-email" placeholder="Enter Email" required/>
               </div>
               <div class="info">
                 <label for="student-vehicle">Vehicle (Make):</label>
-                <input type="text" name="student-vehicle" id="student-vehicle" required/>
+                <input type="text" name="student-vehicle" id="student-vehicle" placeholder="Enter Vehicle Make" required/>
               </div>
               <div class="info">
                 <label for="student-vehicle">Model:</label>
-                <input type="text" name="student-vehicle" id="student-vehicle" required/>
+                <input type="text" name="student-vehicle" id="student-vehicle" placeholder="Enter Vehicle Model" required/>
               </div>
               <div class="info">
                 <label for="student-vehicle">Plate:</label>
-                <input type="text" name="student-vehicle" id="student-vehicle" required/>
+                <input type="text" name="student-vehicle" id="student-vehicle" placeholder="Enter Vehicle Plates" required/>
               </div>
               <div class="info">
                 
@@ -92,9 +92,13 @@
                 <li><i>Copy of RV registration required</i></li>
                 <li><i>Pictures are required of RV if staying longer then a week</i></li>
               </div>
+
+             
+
+
               <div class="info">
                 <label for="student-dog-breed">Dog <br>(Breed): </label> 
-                <input type="text" name="student-dog-breed" id="student-dog-breed" required/>
+                <input type="text" name="student-dog-breed" id="ihad" placeholder="optional" />
               </div>
               <div class="info">
                 <label for="arrival-date">Arrival Date<span class="sr-only">(Arrival Date)</span></label>
@@ -106,34 +110,28 @@
               </div>  
   
             </section>
-  
+          
+
+            <!-- ===//ADDITIONAL GUESTS FORM SECTION BEGINS//=== -->
             <section role="region" aria-labelledby="html-questions">
               <h2 id="html-questions">Additional Guests $10/guest per day</h2>
-                <div class="info">
-                  <label for="student-name">Name:</label>
-                  <input type="text" name="student-name" id="student-name" required/>
-                  <div class="info">
-                    <label for="student-age">Age:</label>
-                    <input type="number" name="student-age" id="student-age" required/>
-                  </div>
-                </div>
-                <div class="info">
-                  <label for="student-name">Name:</label>
-                  <input type="text" name="student-name" id="student-name" required/>
-                  <div class="info">
-                    <label for="student-age">Age:</label>
-                    <input type="number" name="student-age" id="student-age" required/>
-                  </div>
-                </div>
-                <div class="info">
-                  <label for="student-name">Name:</label>
-                  <input type="text" name="student-name" id="student-name" required/>
-                  <div class="info">
-                    <label for="student-age">Age:</label>
-                    <input type="number" name="student-age" id="student-age" required/>
-                  </div>
-                </div>
-  
+              
+              <label for="addStu">
+                <input type="checkbox" id="addStu" onclick="EnableDisableTextBox(this)" />
+                I Have Additional Guests
+              </label> 
+
+              <div class="info">
+                  
+                  <label for="student-name">Enter<br>Name(s)<br>/Age:</label>
+                  <input type="text" name="student-name" id="studentname" disabled="disabled" placeholder="Enter Name(s) & Age"/>
+              </div>
+
+                            
+                
+                <!-- ===//ADDITIONAL GUESTS FORM SECTION ENDS//=== -->
+                 
+                <!-- ====//OFFICE INFO SECTION BEGINS//===== -->
                 <section role="region" aria-labelledby="html-questions">
                   <h2 id="html-questions">For Office Use</h2>
                   <div class="info">
@@ -145,6 +143,10 @@
                     <input type="text" name="student-cabin" id="student-cabin" required/>
                   </div>
                 </section>
+                <!-- ====//OFFICE INFO SECTION ENDS//===== -->
+
+
+                <!-- ===//TAC CHECKBOX SECTION BEGINS//=== -->
             
             <div class="info">
               <input type="checkbox" name="prefer" class="checkbox" value="terms-and-condition" /> <a href="./tac.html">I agree with Terms & Conditions</a>
@@ -152,10 +154,13 @@
             <div class="info">
               <input type="checkbox" name="prefer" class="checkbox" value="terms-and-condition" /> <a href="./tac.html">I Accept Agreement For Risks</a>
             </div>
+                <!-- ===//TAC CHECKBOX SECTION ENDS//=== -->
             
           </form>
         </main>
   
+        <!-- ===//SIGNATURE PAD SECTION BEGINS//==== -->
+
         <form class="signature-pad-form" action="#" method="POST">
           
           
@@ -170,6 +175,8 @@
           <button class="submit-button" type="submit">OK</button>
         </form>
 
+        <!-- ===//SIGNATURE PAD SECTION ENDS//==== -->
+
         <button class="submit-button" type="submit">SUBMIT</button>
   
 
@@ -179,7 +186,7 @@
 
       <footer>
         <address>
-          <a href="https://www.adventuresawait.us">Adventures Awaits</a><br />
+          <a href="https://www.adventuresawait.us"> Adventures Await </a><br />
           89 Hunting Quarter Rd <br>
            Houston DE 19954<BR>
            USA
