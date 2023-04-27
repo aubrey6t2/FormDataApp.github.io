@@ -67,17 +67,3 @@ ctx.lineJoin = ctx.lineCap = 'round';
 canvas.addEventListener('pointerdown', handlePointerDown, {passive: true});
 canvas.addEventListener('pointerup', handlePointerUp, {passive: true});
 canvas.addEventListener('pointermove', handlePointerMove, {passive: true});
-
-
-
-
-
-
-function EnableDisableTextBox(addStu) {
-  var studentname = document.getElementById('studentname');
-  studentname.disabled = addStu.checked?false:true;
-  if(studentname.disabled){
-    studentname.focus();
-  } 
-}
-
