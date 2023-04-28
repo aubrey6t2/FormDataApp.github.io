@@ -40,31 +40,31 @@
               <h2 id="student-info">Customer's Info</h2>
               <div class="info">
                 <label for="student-name">Name:</label>
-                <input type="text" name="student-name" id="student-name" placeholder="Enter Full Name" required/>
+                <input type="text" name="customers-name" id="student-name" placeholder="Enter Full Name" required/>
               </div>
               <div class="info">
                 <label for="student-address">Address:</label>
-                <input type="text" name="student-address" id="student-address" placeholder="Enter Address" required/>
+                <input type="text" name="customers-address" id="student-address" placeholder="Enter Address" required/>
               </div>
               <div class="info">
                 <label for="student-phone">Phone:</label>
-                <input type="number" name="student-phone" id="student-phone" placeholder="Enter Phone" required/>
+                <input type="number" name="customers-phone" id="student-phone" placeholder="Enter Phone" required/>
               </div>
               <div class="info">
                 <label for="student-email">Email:</label>
-                <input type="email" name="student-email" id="student-email" placeholder="Enter Email" required/>
+                <input type="email" name="customers-email" id="student-email" placeholder="Enter Email" required/>
               </div>
               <div class="info">
                 <label for="student-vehicle">Vehicle (Make):</label>
-                <input type="text" name="student-vehicle" id="student-vehicle" placeholder="Enter Vehicle Make" required/>
+                <input type="text" name="vehicle-make" id="student-vehicle" placeholder="Enter Vehicle Make" required/>
               </div>
               <div class="info">
                 <label for="student-vehicle">Model:</label>
-                <input type="text" name="student-vehicle" id="student-vehicle" placeholder="Enter Vehicle Model" required/>
+                <input type="text" name="vehicle-model" id="student-vehicle" placeholder="Enter Vehicle Model" required/>
               </div>
               <div class="info">
                 <label for="student-vehicle">Plate:</label>
-                <input type="text" name="student-vehicle" id="student-vehicle" placeholder="Enter Vehicle Plates" required/>
+                <input type="text" name="vehicle-plates" id="student-vehicle" placeholder="Enter Vehicle Plates" required/>
               </div>
               <div class="info">
                 
@@ -76,17 +76,17 @@
   
               <div class="info">
                 <label for="student-RV">RV<br>(make): </label> 
-                <input type="text" name="student-RV" id="student-RV" required/>
+                <input type="text" name="RV-make" id="student-RV" required/>
               </div>
               <div class="info">
                 <label for="student-length">Length:</label>
-                <input type="number" name="student-length" id="student-length" required/>
+                <input type="number" name="RV-length" id="student-length" required/>
               </div>
               <div class="info">
-                <input type="checkbox" name="prefer" class="checkbox" value="30-amp" />30 amp
+                <input type="checkbox" name="30-amp" class="checkbox" value="30-amp" />30 amp
               </div>
               <div class="info">
-                <input type="checkbox" name="prefer" class="checkbox" value="50-amp" />50 amp
+                <input type="checkbox" name="50-amp" class="checkbox" value="50-amp" />50 amp
               </div>
               <div class="info">
                 <li><i>Copy of RV registration required</i></li>
@@ -98,7 +98,7 @@
 
               <div class="info">
                 <label for="student-dog-breed">Dog <br>(Breed): </label> 
-                <input type="text" name="student-dog-breed" id="ihad" placeholder="optional" />
+                <input type="text" name="customers-dog-breed" id="ihad" placeholder="optional" />
               </div>
               <div class="info">
                 <label for="arrival-date">Arrival Date<span class="sr-only">(Arrival Date)</span></label>
@@ -124,7 +124,7 @@
               <div class="info">
                   
                   <label for="student-name">Enter<br>Name(s)<br>/Age:</label>
-                  <input type="text" name="student-name" id="studentname" disabled="disabled" placeholder="Enter Name(s) & Age"/>
+                  <input type="text" name="name(s)-of-Additional-guests" id="studentname" disabled="disabled" placeholder="Enter Name(s) & Age"/>
               </div>
 
                             
@@ -136,11 +136,11 @@
                   <h2 id="html-questions">For Office Use</h2>
                   <div class="info">
                     <label for="student-rv-lot">RV Lot #: </label> 
-                    <input type="text" name="student-rv-lot" id="student-rv-lot" required/>
+                    <input type="text" name="customers-rv-lot" id="student-rv-lot" required/>
                   </div>
                   <div class="info">
                     <label for="student-cabin">Cabin #: </label> 
-                    <input type="text" name="student-cabin" id="student-cabin" required/>
+                    <input type="text" name="customers-cabin" id="student-cabin" required/>
                   </div>
                 </section>
                 <!-- ====//OFFICE INFO SECTION ENDS//===== -->
@@ -149,10 +149,10 @@
                 <!-- ===//TAC CHECKBOX SECTION BEGINS//=== -->
             
             <div class="info">
-              <input type="checkbox" name="prefer" class="checkbox" /> <a href="./tac.html">I agree with Terms & Conditions</a>
+              <input type="checkbox" name="I-agree-with-Terms-and-conditions" class="checkbox" /> <a href="./tac.html">I agree with Terms & Conditions</a>
             </div>
             <div class="info">
-              <input type="checkbox" name="prefer" class="checkbox" /> <a href="./tac.html">I Accept Agreement For Risks</a>
+              <input type="checkbox" name="I-accept-agreement-for-risks" class="checkbox" /> <a href="./tac.html">I Accept Agreement For Risks</a>
             </div>
                 <!-- ===//TAC CHECKBOX SECTION ENDS//=== -->
 
@@ -172,7 +172,7 @@
         
 
          <!-- ===//SIGNATURE PAD SECTION BEGINS//==== -->
-         <form class="signature-pad-form" action="#" method="POST">
+         
           
           <b>Signature</b>
           <canvas height="100" width="300" class="signature-pad">
@@ -182,9 +182,10 @@
             <a href="#" class="clear-button">Clear</a>
           
         
-          <button class="submit-button" type="submit" >SUBMIT</button>
+          <button class="submit-button" type="submit" >OK</button>
         </form>
         <!-- ===//SIGNATURE PAD SECTION ENDS//==== -->
+        <button class="submit-button" type="submit" >SUBMIT</button>
 
     </form>
 
