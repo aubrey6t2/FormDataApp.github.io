@@ -5,7 +5,7 @@ const ctx = canvas.getContext('2d');
 let writingMode = false;
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
+  //event.preventDefault();
 
   const imageURL = canvas.toDataURL();
   const image = document.createElement('img');
